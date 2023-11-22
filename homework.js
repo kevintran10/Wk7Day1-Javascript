@@ -44,3 +44,34 @@ console.log(arr)
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"]
+
+// Codewars 1: Even or Odd
+function evenOrOdd(num) {
+    if(num % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+};
+
+
+// Codewars 2: FizzBuzz
+function fizzBuzz(num) {
+    //Write a number that is DIVISIBLE by both 3 AND 5, RETURN a string "FizzBuzz"
+    if (num % 3 === 0 && num % 5 === 0) {
+            return "FizzBuzz";
+    }
+    // write a statement for a Number that is DIVISIBLE by 3, RETURN a string "Fizz"
+        if (num % 3 === 0) {
+            return "Fizz";
+        } 
+    // write a statement for a Number that is DIVISIBLE by 5, RETURN a string "Buzz"
+        if (num % 5 === 0) {
+            return "Buzz";
+        }
+    // RETURN the input function
+        else  {
+            return(fizzBuzz(num));
+        }
+    }
+    
