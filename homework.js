@@ -13,15 +13,19 @@ let dog_string = "Hello Max, my name is Dog, and I have purple eyes!";
 let dog_names = ["Max","HAS","PuRple","dog"];
 
 
-function findWords(aString, aArray){
-    for (let i = 0; i < aArray.length; i++) {
-        if (aString.toLowerCase().includes(aArray[i].toLowerCase())) {
-            console.log(`Matched ${aArray[i]}`); 
-        } else {
-            console.log('No match');
+function findWords(dog_string, dog_names){                            
+    for (let i = 0; i < dog_names.length; i++) {     
+        // I'm creating a const variable to hold the variable that was given, but making it lowercased.                              
+        const dogName = dog_names[i].toLowerCase(); 
+        // same thing here, but just making the string lowercased inputs/converted.
+        if (dog_string.toLowerCase().includes(dogName)) {
+            console.log(`Matched ${dog_names[i]}`) 
+            } 
+            else {
+            console.log("No Match!")
         }
     }
-}
+}        
 //Call method here with parameters
 findWords(dog_string, dog_names)
 
